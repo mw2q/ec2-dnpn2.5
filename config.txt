@@ -1,0 +1,17 @@
+node: pgxl
+kernel: Linux 3.10.0-229.el7.x86_64
+distribution: Red Hat Enterprise Linux Server release 7.1 (Maipo)
+dbver: PostgreSQL 9.5alpha1 (Postgres-XL 9.5alpha1)
+sysstat: 10.1.5
+CPUS: 4
+MHz:  2494.080
+model:  Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+memory:        30987820 kB
+scale_factor: 100
+num_stream: 1
+load_parameters: -c shared_buffers=4GB -c maintenance_work_mem=4GB -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0 -c effective_cache_size=20GB -c work_mem=512MB -c max_prepared_transactions=100 -c default_statistics_target=10000 -c max_connections=300 -c max_wal_size=128GB
+power_parameters: -c shared_buffers=4GB -c work_mem=512MB -c default_statistics_target=1000 -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0 -c effective_cache_size=10GB -c max_connections=1000 -c shared_queue_size=8192 -c max_prepared_transactions=100 -c statement_timeout=1000s 
+throughput_parameters: -c shared_buffers=8GB -c work_mem=512MB -c default_statistics_target=10000 -c log_checkpoints=on -c log_line_prefix='%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h ' -c log_lock_waits=on -c log_temp_files=0 -c effective_cache_size=20GB -c max_prepared_transactions=100  -c max_connections=1000 -c shared_queue_size=8192 -c statement_timeout=1000s
+shmmax: 4294967295
+dbms: pgsql
+datanodes: 8

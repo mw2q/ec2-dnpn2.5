@@ -1,0 +1,76 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	s_name,
+	s_address
+from
+	supplier,
+	nation
+where
+	s_suppkey in (
+		select
+			ps_suppkey
+		from
+			partsupp
+		where
+			ps_partkey in (
+				select
+					p_partkey
+				from
+					part
+				where
+					p_name like 'drab%'
+			)
+			and ps_availqty > (
+				select
+					0.5 * sum(l_quantity)
+				from
+					lineitem
+				where
+					l_partkey = ps_partkey
+					and l_suppkey = ps_suppkey
+					and l_shipdate >= '1997-01-01'
+					and l_shipdate < cast(date '1997-01-01' + interval '1 year' as date)
+			)
+	)
+	and s_nationkey = n_nationkey
+	and n_name = 'ARGENTINA'
+order by
+	s_name;
+                                                                                                                                                             QUERY PLAN                                                                                                                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=3629526.37..3629555.44 rows=11627 width=51)
+   ->  Sort  (cost=3629526.37..3629555.44 rows=11627 width=51)
+         Sort Key: supplier.s_name
+         ->  Nested Loop Semi Join  (cost=750.55..3628741.25 rows=11627 width=51)
+               ->  Remote Subquery Scan on all (datanode_6_1)  (cost=850.17..26376.16 rows=40000 width=55)
+                     Distribute results by H: s_suppkey
+                     ->  Nested Loop  (cost=750.17..23876.16 rows=40000 width=55)
+                           ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                 Filter: (n_name = 'ARGENTINA'::bpchar)
+                           ->  Bitmap Heap Scan on supplier  (cost=750.17..23474.84 rows=40000 width=59)
+                                 Recheck Cond: (s_nationkey = nation.n_nationkey)
+                                 ->  Bitmap Index Scan on supplier_s_nationkey_s_suppkey_idx  (cost=0.00..740.17 rows=40000 width=0)
+                                       Index Cond: (s_nationkey = nation.n_nationkey)
+               ->  Materialize  (cost=100.38..190.12 rows=1 width=4)
+                     ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=100.38..190.12 rows=1 width=4)
+                           Distribute results by H: ps_suppkey
+                           ->  Nested Loop Semi Join  (cost=0.38..90.11 rows=1 width=4)
+                                 ->  Index Scan using partsupp_ps_suppkey_idx on partsupp  (cost=0.19..89.47 rows=2 width=8)
+                                       Index Cond: (ps_suppkey = supplier.s_suppkey)
+                                       Filter: ((ps_availqty)::double precision > (SubPlan 1))
+                                       SubPlan 1
+                                         ->  Aggregate  (cost=16.28..16.29 rows=1 width=4)
+                                               ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=0.20..16.27 rows=1 width=4)
+                                                     ->  Aggregate  (cost=0.20..16.27 rows=1 width=4)
+                                                           ->  Index Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem  (cost=0.20..16.27 rows=1 width=4)
+                                                                 Index Cond: (l_partkey = partsupp.ps_partkey)
+                                                                 Filter: ((l_shipdate >= '1997-01-01'::date) AND (l_shipdate < '1998-01-01'::date) AND (l_suppkey = partsupp.ps_suppkey))
+                                 ->  Index Scan using pk_part on part  (cost=0.19..0.28 rows=1 width=4)
+                                       Index Cond: (p_partkey = partsupp.ps_partkey)
+                                       Filter: ((p_name)::text ~~ 'drab%'::text)
+(30 rows)
+
+COMMIT;
+COMMIT

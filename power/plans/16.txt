@@ -1,0 +1,61 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	p_brand,
+	p_type,
+	p_size,
+	count(distinct ps_suppkey) as supplier_cnt
+from
+	partsupp,
+	part
+where
+	p_partkey = ps_partkey
+	and p_brand <> 'Brand#44'
+	and p_type not like 'LARGE BRUSHED%'
+	and p_size in (5, 15, 50, 6, 17, 43, 29, 2)
+	and ps_suppkey not in (
+		select
+			s_suppkey
+		from
+			supplier
+		where
+			s_comment like '%Customer%Complaints%'
+	)
+group by
+	p_brand,
+	p_type,
+	p_size
+order by
+	supplier_cnt desc,
+	p_brand,
+	p_type,
+	p_size;
+                                                                                                                                                  QUERY PLAN                                                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=3662575.21..3662644.72 rows=27804 width=40)
+   Sort Key: (count(DISTINCT partsupp.ps_suppkey)) DESC, part.p_brand, part.p_type, part.p_size
+   ->  GroupAggregate  (cost=581885.15..3660522.85 rows=27804 width=40)
+         Group Key: part.p_brand, part.p_type, part.p_size
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=581885.15..3600931.04 rows=5931377 width=40)
+               ->  Sort  (cost=4268209.05..4283037.49 rows=5931377 width=40)
+                     Sort Key: part.p_brand, part.p_type, part.p_size
+                     ->  Hash Join  (cost=581885.15..3600931.04 rows=5931377 width=40)
+                           Hash Cond: (partsupp.ps_partkey = part.p_partkey)
+                           ->  Seq Scan on partsupp  (cost=2396.90..2712129.00 rows=40000004 width=8)
+                                 Filter: (NOT (hashed SubPlan 1))
+                                 SubPlan 1
+                                   ->  Remote Subquery Scan on all (datanode_6_1)  (cost=4.30..2395.15 rows=697 width=4)
+                                         ->  Bitmap Heap Scan on supplier  (cost=4.30..2395.15 rows=697 width=4)
+                                               Recheck Cond: ((s_comment)::text ~~ '%Customer%Complaints%'::text)
+                                               ->  Bitmap Index Scan on supplier_s_suppkey_idx_like  (cost=0.00..4.13 rows=697 width=0)
+                           ->  Hash  (cost=542417.15..542417.15 rows=2965688 width=40)
+                                 ->  Bitmap Heap Scan on part  (cost=57225.60..542417.15 rows=2965688 width=40)
+                                       Recheck Cond: (p_size = ANY ('{5,15,50,6,17,43,29,2}'::integer[]))
+                                       Filter: ((p_brand <> 'Brand#44'::bpchar) AND ((p_type)::text !~~ 'LARGE BRUSHED%'::text))
+                                       ->  Bitmap Index Scan on part_p_size_idx  (cost=0.00..56484.18 rows=3196622 width=0)
+                                             Index Cond: (p_size = ANY ('{5,15,50,6,17,43,29,2}'::integer[]))
+(22 rows)
+
+COMMIT;
+COMMIT

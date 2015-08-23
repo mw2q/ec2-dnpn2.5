@@ -1,0 +1,913 @@
+2015-08-21 14:12:15 EDT [12678]: [1-1] user=,db=,app=,client= LOG:  database system was shut down at 2015-08-21 14:11:44 EDT
+2015-08-21 14:12:15 EDT [12678]: [2-1] user=,db=,app=,client= LOG:  MultiXact member wraparound protections are now enabled
+2015-08-21 14:12:15 EDT [12677]: [1-1] user=,db=,app=,client= LOG:  database system is ready to accept connections
+2015-08-21 14:12:15 EDT [12683]: [1-1] user=,db=,app=,client= LOG:  autovacuum launcher started
+2015-08-21 14:12:53 EDT [12680]: [1-1] user=,db=,app=,client= LOG:  checkpoint starting: xlog
+2015-08-21 14:13:14 EDT [12736]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.1", size 14718260
+2015-08-21 14:13:14 EDT [12736]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:14 EDT [12736]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.5", size 3484544
+2015-08-21 14:13:14 EDT [12736]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:15 EDT [12736]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.0", size 14731904
+2015-08-21 14:13:15 EDT [12736]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:15 EDT [12736]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.4", size 3469152
+2015-08-21 14:13:15 EDT [12736]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:15 EDT [12736]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.2", size 14744080
+2015-08-21 14:13:15 EDT [12736]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:15 EDT [12736]: [11-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp12736.3", size 3493728
+2015-08-21 14:13:15 EDT [12736]: [12-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:13:15 EDT [12740]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Producer stats: total 437240 tuples, 27424 tuples to self, 409816 to other nodes
+2015-08-21 14:13:15 EDT [12740]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Producer p_1_70e0_1 is done
+2015-08-21 14:13:15 EDT [12740]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Tuplestore p_1_70e0_1 producer store did 27424 writes and 27424 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 14:15:25 EDT [12680]: [2-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 56642 buffers (10.8%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=149.825 s, sync=2.210 s, total=152.060 s; sync files=22, longest=1.829 s, average=0.100 s; distance=415168 kB, estimate=415168 kB
+2015-08-21 14:17:53 EDT [12680]: [3-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 14:19:32 EDT [12680]: [4-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1820 buffers (0.3%); 0 transaction log file(s) added, 26 removed, 0 recycled; write=99.459 s, sync=0.029 s, total=99.495 s; sync files=22, longest=0.011 s, average=0.001 s; distance=122723 kB, estimate=385924 kB
+2015-08-21 14:32:11 EDT [12736]: [13-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [14-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:32:11 EDT [12736]: [15-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to read from shared queue - producer failed and set status to 2
+2015-08-21 14:32:11 EDT [12758]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12758]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error could not send data to server
+2015-08-21 14:32:11 EDT [12758]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:32:11 EDT [12758]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 ERROR:  Failed to synchronize data node
+2015-08-21 14:32:11 EDT [12758]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:32:11 EDT [12757]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Producer stats: total 119000 tuples, 7464 tuples to self, 111536 to other nodes
+2015-08-21 14:32:11 EDT [12767]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [16-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:32:11 EDT [12765]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12768]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [17-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [18-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12762]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12755]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12770]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12760]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12766]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [19-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [20-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [21-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [22-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [23-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [24-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [25-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [26-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [27-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [28-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [29-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [30-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [31-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [32-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:32:11 EDT [12736]: [33-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  could not send data to client: Broken pipe
+2015-08-21 14:32:11 EDT [12736]: [34-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:32:11 EDT [12758]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Tuplestore p_1_73b8_3 producer store did 45707 writes and 41000 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 4708
+2015-08-21 14:32:11 EDT [12758]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:32:11 EDT [12757]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Producer p_1_73b8_1 is done
+2015-08-21 14:32:11 EDT [12757]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Tuplestore p_1_73b8_1 producer store did 7464 writes and 1000 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 6465
+2015-08-21 14:32:11 EDT [12736]: [35-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 FATAL:  connection to client lost
+2015-08-21 14:32:54 EDT [12680]: [5-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 14:33:23 EDT [12680]: [6-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 286 buffers (0.1%); 0 transaction log file(s) added, 7 removed, 0 recycled; write=28.896 s, sync=0.012 s, total=28.915 s; sync files=5, longest=0.006 s, average=0.002 s; distance=0 kB, estimate=347331 kB
+2015-08-21 14:48:49 EDT [13282]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13282]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:48:49 EDT [13304]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13304]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13304]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13304]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13304]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13304]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13304]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13313]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13313]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13313]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13313]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13313]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13313]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13313]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13288]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13288]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13288]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13288]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13288]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13288]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13288]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13303]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13303]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13303]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13303]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13303]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13303]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13303]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13312]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13312]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13312]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13312]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13312]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13312]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13312]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13310]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13310]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13310]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13310]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13310]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13310]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13310]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13307]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13307]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13307]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13307]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13307]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13307]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13307]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13311]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13311]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13311]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13311]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13311]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13311]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13311]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13299]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13299]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13299]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13299]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13299]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13299]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13299]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13284]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13284]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13284]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13284]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13284]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13284]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13284]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13282]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13297]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 LOG:  Failed to ROLLBACK the transaction on one or more nodes
+2015-08-21 14:48:49 EDT [13297]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13297]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13297]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.92.9.245 FATAL:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [11-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [12-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [13-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [14-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13287]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13287]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13287]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13287]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13287]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13287]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 STATEMENT:  ROLLBACK TRANSACTION
+2015-08-21 14:48:49 EDT [13287]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13295]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13295]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 STATEMENT:  Remote Subplan
+2015-08-21 14:48:49 EDT [13282]: [15-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13314]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13314]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  could not send data to client: Connection reset by peer
+2015-08-21 14:48:49 EDT [13300]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13314]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13314]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13314]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13314]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 LOG:  could not send data to client: Broken pipe
+2015-08-21 14:48:49 EDT [13314]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13300]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13300]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13314]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.95.141.120 FATAL:  connection to client lost
+2015-08-21 14:48:49 EDT [13300]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13300]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13282]: [16-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [17-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [18-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [19-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [20-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13282]: [21-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [22-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [23-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [24-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [25-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13282]: [26-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  Connection error failed to send ROLLBACK TRANSACTION command
+2015-08-21 14:48:49 EDT [13305]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 ERROR:  canceling statement due to statement timeout
+2015-08-21 14:48:49 EDT [13305]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  could not send data to client: Connection reset by peer
+2015-08-21 14:48:49 EDT [13305]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Connection error could not send data to server
+2015-08-21 14:48:49 EDT [13305]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Connection error failed to send data to datanode
+2015-08-21 14:48:49 EDT [13305]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 ERROR:  Failed to synchronize data node
+2015-08-21 14:48:49 EDT [13305]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  could not send data to client: Broken pipe
+2015-08-21 14:48:49 EDT [13305]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 WARNING:  AbortTransaction while in ABORT state
+2015-08-21 14:48:49 EDT [13305]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 FATAL:  connection to client lost
+2015-08-21 14:52:54 EDT [12680]: [7-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 14:53:57 EDT [12680]: [8-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 634 buffers (0.1%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=63.355 s, sync=0.010 s, total=63.370 s; sync files=7, longest=0.009 s, average=0.001 s; distance=1 kB, estimate=312598 kB
+2015-08-21 14:55:58 EDT [14237]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.0", size 329701944
+2015-08-21 14:55:58 EDT [14237]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:02 EDT [14237]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.1", size 168055236
+2015-08-21 14:56:02 EDT [14237]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.15", size 96
+2015-08-21 14:56:04 EDT [14237]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.28", size 32867968
+2015-08-21 14:56:04 EDT [14237]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.10", size 72
+2015-08-21 14:56:04 EDT [14237]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [11-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.29", size 32864832
+2015-08-21 14:56:04 EDT [14237]: [12-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [13-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.6", size 24
+2015-08-21 14:56:04 EDT [14237]: [14-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [15-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.18", size 32838624
+2015-08-21 14:56:04 EDT [14237]: [16-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:04 EDT [14237]: [17-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.12", size 48
+2015-08-21 14:56:04 EDT [14237]: [18-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:05 EDT [14237]: [19-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.19", size 32821432
+2015-08-21 14:56:05 EDT [14237]: [20-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:05 EDT [14237]: [21-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.4", size 72
+2015-08-21 14:56:05 EDT [14237]: [22-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:05 EDT [14237]: [23-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.26", size 32858168
+2015-08-21 14:56:05 EDT [14237]: [24-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:05 EDT [14237]: [25-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.8", size 72
+2015-08-21 14:56:05 EDT [14237]: [26-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:06 EDT [14237]: [27-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.23", size 32828264
+2015-08-21 14:56:06 EDT [14237]: [28-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:06 EDT [14237]: [29-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.13", size 72
+2015-08-21 14:56:06 EDT [14237]: [30-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:06 EDT [14237]: [31-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.24", size 32842600
+2015-08-21 14:56:06 EDT [14237]: [32-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:07 EDT [14237]: [33-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.5", size 72
+2015-08-21 14:56:07 EDT [14237]: [34-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:07 EDT [14237]: [35-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.20", size 32828936
+2015-08-21 14:56:07 EDT [14237]: [36-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:07 EDT [14237]: [37-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.17", size 24
+2015-08-21 14:56:07 EDT [14237]: [38-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:07 EDT [14237]: [39-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.27", size 32876200
+2015-08-21 14:56:07 EDT [14237]: [40-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:07 EDT [14237]: [41-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.11", size 48
+2015-08-21 14:56:07 EDT [14237]: [42-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:08 EDT [14237]: [43-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.32", size 32937128
+2015-08-21 14:56:08 EDT [14237]: [44-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:08 EDT [14237]: [45-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.16", size 24
+2015-08-21 14:56:08 EDT [14237]: [46-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:08 EDT [14237]: [47-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.22", size 32818072
+2015-08-21 14:56:08 EDT [14237]: [48-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:08 EDT [14237]: [49-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.7", size 96
+2015-08-21 14:56:08 EDT [14237]: [50-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:08 EDT [14237]: [51-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.25", size 32867632
+2015-08-21 14:56:08 EDT [14237]: [52-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [53-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.9", size 24
+2015-08-21 14:56:09 EDT [14237]: [54-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [55-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.21", size 32872952
+2015-08-21 14:56:09 EDT [14237]: [56-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [57-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.3", size 96
+2015-08-21 14:56:09 EDT [14237]: [58-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [59-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.30", size 32844168
+2015-08-21 14:56:09 EDT [14237]: [60-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [61-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.14", size 72
+2015-08-21 14:56:09 EDT [14237]: [62-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:09 EDT [14237]: [63-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.31", size 32881408
+2015-08-21 14:56:09 EDT [14237]: [64-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:49 EDT [14237]: [65-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.33", size 420
+2015-08-21 14:56:49 EDT [14237]: [66-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:50 EDT [14237]: [67-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.36", size 262310048
+2015-08-21 14:56:50 EDT [14237]: [68-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:50 EDT [14237]: [69-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.35", size 600
+2015-08-21 14:56:50 EDT [14237]: [70-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:51 EDT [14237]: [71-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.38", size 262101196
+2015-08-21 14:56:51 EDT [14237]: [72-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:53 EDT [14237]: [73-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.34", size 420
+2015-08-21 14:56:53 EDT [14237]: [74-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:54 EDT [14237]: [75-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.37", size 262622416
+2015-08-21 14:56:54 EDT [14237]: [76-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 14:56:54 EDT [14237]: [77-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.2", size 676413440
+2015-08-21 14:57:54 EDT [12680]: [9-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 14:58:31 EDT [12680]: [10-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 366 buffers (0.1%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=36.297 s, sync=0.019 s, total=36.322 s; sync files=7, longest=0.012 s, average=0.002 s; distance=0 kB, estimate=281339 kB
+2015-08-21 14:59:54 EDT [13624]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Producer stats: total 246061 tuples, 15125 tuples to self, 230936 to other nodes
+2015-08-21 14:59:54 EDT [13624]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Producer p_1_1b22_2 is done
+2015-08-21 14:59:54 EDT [13624]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.223.4.4 LOG:  Tuplestore p_1_1b22_2 producer store did 15125 writes and 15125 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:02:18 EDT [14237]: [78-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.89", size 16445856
+2015-08-21 15:02:18 EDT [14237]: [79-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:25 EDT [14237]: [80-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.134", size 840952
+2015-08-21 15:02:25 EDT [14237]: [81-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:25 EDT [14237]: [82-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.40", size 16393440
+2015-08-21 15:02:25 EDT [14237]: [83-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:31 EDT [14237]: [84-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.161", size 831432
+2015-08-21 15:02:31 EDT [14237]: [85-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:31 EDT [14237]: [86-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.69", size 16348752
+2015-08-21 15:02:31 EDT [14237]: [87-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:35 EDT [14237]: [88-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.129", size 824320
+2015-08-21 15:02:35 EDT [14237]: [89-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:35 EDT [14237]: [90-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.77", size 16376724
+2015-08-21 15:02:35 EDT [14237]: [91-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:38 EDT [14237]: [92-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.149", size 830256
+2015-08-21 15:02:38 EDT [14237]: [93-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:38 EDT [14237]: [94-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.52", size 16407244
+2015-08-21 15:02:38 EDT [14237]: [95-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:41 EDT [14237]: [96-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.103", size 842520
+2015-08-21 15:02:41 EDT [14237]: [97-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:41 EDT [14237]: [98-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.81", size 16339596
+2015-08-21 15:02:41 EDT [14237]: [99-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:43 EDT [14237]: [100-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.109", size 823256
+2015-08-21 15:02:43 EDT [14237]: [101-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:43 EDT [14237]: [102-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.80", size 16438828
+2015-08-21 15:02:43 EDT [14237]: [103-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:44 EDT [14237]: [104-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.132", size 815584
+2015-08-21 15:02:44 EDT [14237]: [105-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:44 EDT [14237]: [106-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.87", size 16436952
+2015-08-21 15:02:44 EDT [14237]: [107-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:45 EDT [14237]: [108-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.120", size 827512
+2015-08-21 15:02:45 EDT [14237]: [109-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:45 EDT [14237]: [110-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.85", size 16413600
+2015-08-21 15:02:45 EDT [14237]: [111-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:45 EDT [14237]: [112-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.139", size 823312
+2015-08-21 15:02:45 EDT [14237]: [113-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:45 EDT [14237]: [114-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.58", size 16438296
+2015-08-21 15:02:45 EDT [14237]: [115-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:46 EDT [14237]: [116-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.113", size 831488
+2015-08-21 15:02:46 EDT [14237]: [117-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:46 EDT [14237]: [118-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.51", size 16376920
+2015-08-21 15:02:46 EDT [14237]: [119-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:46 EDT [14237]: [120-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.154", size 830088
+2015-08-21 15:02:46 EDT [14237]: [121-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:46 EDT [14237]: [122-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.76", size 16357180
+2015-08-21 15:02:46 EDT [14237]: [123-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:47 EDT [14237]: [124-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.156", size 826728
+2015-08-21 15:02:47 EDT [14237]: [125-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:47 EDT [14237]: [126-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.61", size 16379636
+2015-08-21 15:02:47 EDT [14237]: [127-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:47 EDT [14237]: [128-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.160", size 830032
+2015-08-21 15:02:47 EDT [14237]: [129-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:47 EDT [14237]: [130-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.94", size 16367260
+2015-08-21 15:02:47 EDT [14237]: [131-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [132-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.119", size 821184
+2015-08-21 15:02:48 EDT [14237]: [133-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [134-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.98", size 16375632
+2015-08-21 15:02:48 EDT [14237]: [135-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [136-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.145", size 825496
+2015-08-21 15:02:48 EDT [14237]: [137-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [138-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.53", size 16387112
+2015-08-21 15:02:48 EDT [14237]: [139-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [140-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.138", size 832552
+2015-08-21 15:02:48 EDT [14237]: [141-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:48 EDT [14237]: [142-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.46", size 16429224
+2015-08-21 15:02:48 EDT [14237]: [143-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:49 EDT [14237]: [144-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.122", size 829640
+2015-08-21 15:02:49 EDT [14237]: [145-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:49 EDT [14237]: [146-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.95", size 16387448
+2015-08-21 15:02:49 EDT [14237]: [147-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:49 EDT [14237]: [148-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.131", size 844536
+2015-08-21 15:02:49 EDT [14237]: [149-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:49 EDT [14237]: [150-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.78", size 16429420
+2015-08-21 15:02:49 EDT [14237]: [151-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:49 EDT [14237]: [152-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.123", size 840672
+2015-08-21 15:02:49 EDT [14237]: [153-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [154-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.56", size 16391144
+2015-08-21 15:02:50 EDT [14237]: [155-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [156-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.121", size 830424
+2015-08-21 15:02:50 EDT [14237]: [157-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [158-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.101", size 16306444
+2015-08-21 15:02:50 EDT [14237]: [159-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [160-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.118", size 822136
+2015-08-21 15:02:50 EDT [14237]: [161-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [162-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.84", size 16359336
+2015-08-21 15:02:50 EDT [14237]: [163-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:50 EDT [14237]: [164-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.164", size 828128
+2015-08-21 15:02:50 EDT [14237]: [165-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [166-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.75", size 16355752
+2015-08-21 15:02:51 EDT [14237]: [167-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [168-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.158", size 828072
+2015-08-21 15:02:51 EDT [14237]: [169-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [170-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.49", size 16381848
+2015-08-21 15:02:51 EDT [14237]: [171-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [172-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.116", size 817824
+2015-08-21 15:02:51 EDT [14237]: [173-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [174-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.64", size 16358104
+2015-08-21 15:02:51 EDT [14237]: [175-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [176-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.130", size 834176
+2015-08-21 15:02:51 EDT [14237]: [177-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:51 EDT [14237]: [178-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.99", size 16448124
+2015-08-21 15:02:51 EDT [14237]: [179-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [180-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.140", size 829976
+2015-08-21 15:02:52 EDT [14237]: [181-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [182-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.62", size 16364208
+2015-08-21 15:02:52 EDT [14237]: [183-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [184-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.114", size 830816
+2015-08-21 15:02:52 EDT [14237]: [185-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [186-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.73", size 16462600
+2015-08-21 15:02:52 EDT [14237]: [187-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [188-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.135", size 842464
+2015-08-21 15:02:52 EDT [14237]: [189-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [190-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.79", size 16472092
+2015-08-21 15:02:52 EDT [14237]: [191-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [192-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.141", size 834288
+2015-08-21 15:02:52 EDT [14237]: [193-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:52 EDT [14237]: [194-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.65", size 16412536
+2015-08-21 15:02:52 EDT [14237]: [195-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [196-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.147", size 843080
+2015-08-21 15:02:53 EDT [14237]: [197-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [198-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.90", size 16479008
+2015-08-21 15:02:53 EDT [14237]: [199-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [200-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.136", size 829584
+2015-08-21 15:02:53 EDT [14237]: [201-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [202-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.72", size 16458708
+2015-08-21 15:02:53 EDT [14237]: [203-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [204-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.153", size 830144
+2015-08-21 15:02:53 EDT [14237]: [205-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [206-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.67", size 16401868
+2015-08-21 15:02:53 EDT [14237]: [207-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [208-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.163", size 831488
+2015-08-21 15:02:53 EDT [14237]: [209-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:53 EDT [14237]: [210-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.74", size 16396940
+2015-08-21 15:02:53 EDT [14237]: [211-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [212-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.108", size 823816
+2015-08-21 15:02:54 EDT [14237]: [213-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [214-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.44", size 16344216
+2015-08-21 15:02:54 EDT [14237]: [215-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [12680]: [11-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:02:54 EDT [12680]: [12-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.000 s, total=0.012 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=253205 kB
+2015-08-21 15:02:54 EDT [14237]: [216-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.133", size 835296
+2015-08-21 15:02:54 EDT [14237]: [217-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [218-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.66", size 16365776
+2015-08-21 15:02:54 EDT [14237]: [219-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [220-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.152", size 826728
+2015-08-21 15:02:54 EDT [14237]: [221-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [222-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.88", size 16413796
+2015-08-21 15:02:54 EDT [14237]: [223-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [224-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.151", size 831880
+2015-08-21 15:02:54 EDT [14237]: [225-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:54 EDT [14237]: [226-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.70", size 16412984
+2015-08-21 15:02:54 EDT [14237]: [227-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [228-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.127", size 838712
+2015-08-21 15:02:55 EDT [14237]: [229-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [230-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.41", size 16355500
+2015-08-21 15:02:55 EDT [14237]: [231-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [232-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.102", size 809760
+2015-08-21 15:02:55 EDT [14237]: [233-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [234-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.42", size 16374008
+2015-08-21 15:02:55 EDT [14237]: [235-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [236-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.111", size 843584
+2015-08-21 15:02:55 EDT [14237]: [237-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [238-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.63", size 16321900
+2015-08-21 15:02:55 EDT [14237]: [239-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [240-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.117", size 816816
+2015-08-21 15:02:55 EDT [14237]: [241-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:55 EDT [14237]: [242-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.43", size 16488948
+2015-08-21 15:02:55 EDT [14237]: [243-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [244-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.142", size 841904
+2015-08-21 15:02:56 EDT [14237]: [245-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [246-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.86", size 16402484
+2015-08-21 15:02:56 EDT [14237]: [247-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [248-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.146", size 824040
+2015-08-21 15:02:56 EDT [14237]: [249-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [250-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.83", size 16386608
+2015-08-21 15:02:56 EDT [14237]: [251-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [252-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.143", size 827512
+2015-08-21 15:02:56 EDT [14237]: [253-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [254-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.71", size 16436784
+2015-08-21 15:02:56 EDT [14237]: [255-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [256-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.107", size 827904
+2015-08-21 15:02:56 EDT [14237]: [257-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [258-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.92", size 16437316
+2015-08-21 15:02:56 EDT [14237]: [259-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:56 EDT [14237]: [260-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.115", size 832216
+2015-08-21 15:02:56 EDT [14237]: [261-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [262-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.59", size 16368660
+2015-08-21 15:02:57 EDT [14237]: [263-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [264-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.155", size 827120
+2015-08-21 15:02:57 EDT [14237]: [265-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [266-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.100", size 16426480
+2015-08-21 15:02:57 EDT [14237]: [267-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [268-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.159", size 834960
+2015-08-21 15:02:57 EDT [14237]: [269-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [270-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.57", size 16357460
+2015-08-21 15:02:57 EDT [14237]: [271-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:57 EDT [14237]: [272-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.148", size 817880
+2015-08-21 15:02:57 EDT [14237]: [273-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [274-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.91", size 16421440
+2015-08-21 15:02:58 EDT [14237]: [275-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [276-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.128", size 834960
+2015-08-21 15:02:58 EDT [14237]: [277-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [278-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.50", size 16385404
+2015-08-21 15:02:58 EDT [14237]: [279-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [280-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.125", size 829528
+2015-08-21 15:02:58 EDT [14237]: [281-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [282-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.93", size 16337524
+2015-08-21 15:02:58 EDT [14237]: [283-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [284-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.110", size 822472
+2015-08-21 15:02:58 EDT [14237]: [285-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [286-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.54", size 16454788
+2015-08-21 15:02:58 EDT [14237]: [287-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [288-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.105", size 833056
+2015-08-21 15:02:58 EDT [14237]: [289-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:58 EDT [14237]: [290-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.39", size 16392152
+2015-08-21 15:02:58 EDT [14237]: [291-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [292-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.150", size 835968
+2015-08-21 15:02:59 EDT [14237]: [293-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [294-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.96", size 16444820
+2015-08-21 15:02:59 EDT [14237]: [295-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [296-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.137", size 825160
+2015-08-21 15:02:59 EDT [14237]: [297-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [298-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.68", size 16285976
+2015-08-21 15:02:59 EDT [14237]: [299-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [300-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.144", size 824992
+2015-08-21 15:02:59 EDT [14237]: [301-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [302-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.82", size 16523220
+2015-08-21 15:02:59 EDT [14237]: [303-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [304-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.124", size 827792
+2015-08-21 15:02:59 EDT [14237]: [305-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:02:59 EDT [14237]: [306-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.47", size 16421216
+2015-08-21 15:02:59 EDT [14237]: [307-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [308-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.104", size 822304
+2015-08-21 15:03:00 EDT [14237]: [309-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [310-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.55", size 16384732
+2015-08-21 15:03:00 EDT [14237]: [311-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [312-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.162", size 834064
+2015-08-21 15:03:00 EDT [14237]: [313-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [314-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.48", size 16395512
+2015-08-21 15:03:00 EDT [14237]: [315-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [316-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.157", size 822528
+2015-08-21 15:03:00 EDT [14237]: [317-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [318-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.60", size 16319184
+2015-08-21 15:03:00 EDT [14237]: [319-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [320-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.106", size 815752
+2015-08-21 15:03:00 EDT [14237]: [321-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [322-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.97", size 16360260
+2015-08-21 15:03:00 EDT [14237]: [323-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:00 EDT [14237]: [324-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.112", size 831992
+2015-08-21 15:03:00 EDT [14237]: [325-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:01 EDT [14237]: [326-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.45", size 16428076
+2015-08-21 15:03:01 EDT [14237]: [327-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:03:01 EDT [14237]: [328-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.126", size 831768
+2015-08-21 15:03:01 EDT [14237]: [329-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:04:35 EDT [13547]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Tuplestore p_1_20db_1 node 1 did 29910 writes and 29910 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:04:35 EDT [13547]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  Remote Subplan
+2015-08-21 15:04:35 EDT [13547]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Tuplestore p_1_20db_1 node 8 did 52157 writes and 52160 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:04:35 EDT [13547]: [4-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  Remote Subplan
+2015-08-21 15:04:35 EDT [13547]: [5-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Tuplestore p_1_20db_1 node 9 did 39843 writes and 39846 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:04:35 EDT [13547]: [6-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 STATEMENT:  Remote Subplan
+2015-08-21 15:04:35 EDT [14237]: [330-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.165", size 11244552
+2015-08-21 15:04:35 EDT [14237]: [331-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:04:42 EDT [14237]: [332-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.166", size 129834348
+2015-08-21 15:04:42 EDT [14237]: [333-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:04:56 EDT [14237]: [334-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.167", size 171876352
+2015-08-21 15:04:56 EDT [13547]: [7-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Producer stats: total 9286215 tuples, 581704 tuples to self, 8704511 to other nodes
+2015-08-21 15:04:56 EDT [13547]: [8-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Producer p_1_20db_1 is done
+2015-08-21 15:04:56 EDT [13547]: [9-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 LOG:  Tuplestore p_1_20db_1 producer store did 581704 writes and 581704 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:04:56 EDT [13359]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 LOG:  Producer stats: total 15000000 tuples, 937995 tuples to self, 14062005 to other nodes
+2015-08-21 15:04:56 EDT [13359]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 LOG:  Producer p_1_20db_2 is done
+2015-08-21 15:04:56 EDT [13359]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.8.227 LOG:  Tuplestore p_1_20db_2 producer store did 937995 writes and 937995 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:07:54 EDT [12680]: [13-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:07:54 EDT [12680]: [14-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.000 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=227884 kB
+2015-08-21 15:10:55 EDT [14237]: [335-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.168", size 14119824
+2015-08-21 15:10:55 EDT [14237]: [336-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [337-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.189", size 328284
+2015-08-21 15:10:55 EDT [14237]: [338-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [339-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.175", size 14133552
+2015-08-21 15:10:55 EDT [14237]: [340-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [341-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.185", size 323532
+2015-08-21 15:10:55 EDT [14237]: [342-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [343-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.179", size 13989552
+2015-08-21 15:10:55 EDT [14237]: [344-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [345-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.195", size 322432
+2015-08-21 15:10:55 EDT [14237]: [346-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [347-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.169", size 14072160
+2015-08-21 15:10:55 EDT [14237]: [348-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [349-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.190", size 329076
+2015-08-21 15:10:55 EDT [14237]: [350-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [351-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.181", size 13972104
+2015-08-21 15:10:55 EDT [14237]: [352-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [353-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.197", size 328196
+2015-08-21 15:10:55 EDT [14237]: [354-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [355-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.173", size 14006352
+2015-08-21 15:10:55 EDT [14237]: [356-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:55 EDT [14237]: [357-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.196", size 321420
+2015-08-21 15:10:55 EDT [14237]: [358-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [359-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.176", size 14061576
+2015-08-21 15:10:56 EDT [14237]: [360-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [361-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.186", size 330748
+2015-08-21 15:10:56 EDT [14237]: [362-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [363-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.171", size 14068032
+2015-08-21 15:10:56 EDT [14237]: [364-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [365-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.194", size 325996
+2015-08-21 15:10:56 EDT [14237]: [366-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [367-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.174", size 14167872
+2015-08-21 15:10:56 EDT [14237]: [368-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [369-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.191", size 325600
+2015-08-21 15:10:56 EDT [14237]: [370-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [371-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.178", size 14149440
+2015-08-21 15:10:56 EDT [14237]: [372-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [373-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.192", size 327492
+2015-08-21 15:10:56 EDT [14237]: [374-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [375-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.170", size 14207808
+2015-08-21 15:10:56 EDT [14237]: [376-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [377-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.193", size 325072
+2015-08-21 15:10:56 EDT [14237]: [378-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [379-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.180", size 14162544
+2015-08-21 15:10:56 EDT [14237]: [380-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [381-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.187", size 324412
+2015-08-21 15:10:56 EDT [14237]: [382-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [383-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.177", size 14095608
+2015-08-21 15:10:56 EDT [14237]: [384-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [385-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.183", size 329648
+2015-08-21 15:10:56 EDT [14237]: [386-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [387-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.182", size 14110824
+2015-08-21 15:10:56 EDT [14237]: [388-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [389-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.188", size 331188
+2015-08-21 15:10:56 EDT [14237]: [390-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [391-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.172", size 14038776
+2015-08-21 15:10:56 EDT [14237]: [392-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:56 EDT [14237]: [393-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.184", size 336292
+2015-08-21 15:10:56 EDT [14237]: [394-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:10:57 EDT [13371]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Producer stats: total 9387442 tuples, 586747 tuples to self, 8800695 to other nodes
+2015-08-21 15:10:57 EDT [13371]: [2-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Producer p_1_2761_3 is done
+2015-08-21 15:10:57 EDT [13371]: [3-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.232 LOG:  Tuplestore p_1_2761_3 producer store did 586747 writes and 586747 reads, it spilled to disk after 0 writes and 0 reads, now deleted 0 memtuples out of 1
+2015-08-21 15:12:54 EDT [12680]: [15-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:12:54 EDT [12680]: [16-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.000 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=1 kB, estimate=205096 kB
+2015-08-21 15:16:13 EDT [14237]: [395-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.221", size 17804352
+2015-08-21 15:16:13 EDT [14237]: [396-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:13 EDT [14237]: [397-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.238", size 455400
+2015-08-21 15:16:13 EDT [14237]: [398-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:13 EDT [14237]: [399-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.199", size 17782152
+2015-08-21 15:16:13 EDT [14237]: [400-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:13 EDT [14237]: [401-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.245", size 443560
+2015-08-21 15:16:13 EDT [14237]: [402-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:13 EDT [14237]: [403-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.203", size 17755536
+2015-08-21 15:16:13 EDT [14237]: [404-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:13 EDT [14237]: [405-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.259", size 447040
+2015-08-21 15:16:13 EDT [14237]: [406-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [407-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.220", size 17766792
+2015-08-21 15:16:14 EDT [14237]: [408-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [409-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.233", size 446120
+2015-08-21 15:16:14 EDT [14237]: [410-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [411-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.209", size 17821632
+2015-08-21 15:16:14 EDT [14237]: [412-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [413-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.255", size 451480
+2015-08-21 15:16:14 EDT [14237]: [414-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [415-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.223", size 17783520
+2015-08-21 15:16:14 EDT [14237]: [416-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [417-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.254", size 449040
+2015-08-21 15:16:14 EDT [14237]: [418-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [419-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.200", size 17774808
+2015-08-21 15:16:14 EDT [14237]: [420-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [421-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.256", size 445280
+2015-08-21 15:16:14 EDT [14237]: [422-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [423-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.201", size 17797632
+2015-08-21 15:16:14 EDT [14237]: [424-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [425-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.236", size 458080
+2015-08-21 15:16:14 EDT [14237]: [426-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [427-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.217", size 17746896
+2015-08-21 15:16:14 EDT [14237]: [428-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [429-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.251", size 451080
+2015-08-21 15:16:14 EDT [14237]: [430-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [431-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.202", size 17862312
+2015-08-21 15:16:14 EDT [14237]: [432-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [433-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.244", size 453240
+2015-08-21 15:16:14 EDT [14237]: [434-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [435-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.208", size 17776632
+2015-08-21 15:16:14 EDT [14237]: [436-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:14 EDT [14237]: [437-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.250", size 443080
+2015-08-21 15:16:14 EDT [14237]: [438-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [439-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.225", size 17775048
+2015-08-21 15:16:15 EDT [14237]: [440-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [441-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.232", size 439000
+2015-08-21 15:16:15 EDT [14237]: [442-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [443-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.215", size 17824944
+2015-08-21 15:16:15 EDT [14237]: [444-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [445-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.253", size 452120
+2015-08-21 15:16:15 EDT [14237]: [446-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [447-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.227", size 17797080
+2015-08-21 15:16:15 EDT [14237]: [448-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [449-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.234", size 450480
+2015-08-21 15:16:15 EDT [14237]: [450-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [451-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.213", size 17780832
+2015-08-21 15:16:15 EDT [14237]: [452-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [453-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.231", size 447040
+2015-08-21 15:16:15 EDT [14237]: [454-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [455-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.222", size 17797080
+2015-08-21 15:16:15 EDT [14237]: [456-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [457-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.257", size 448960
+2015-08-21 15:16:15 EDT [14237]: [458-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [459-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.205", size 17793456
+2015-08-21 15:16:15 EDT [14237]: [460-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [461-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.240", size 443160
+2015-08-21 15:16:15 EDT [14237]: [462-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [463-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.226", size 17815728
+2015-08-21 15:16:15 EDT [14237]: [464-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [465-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.249", size 451320
+2015-08-21 15:16:15 EDT [14237]: [466-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [467-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.228", size 17819736
+2015-08-21 15:16:15 EDT [14237]: [468-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:15 EDT [14237]: [469-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.246", size 447880
+2015-08-21 15:16:15 EDT [14237]: [470-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [471-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.212", size 17747160
+2015-08-21 15:16:16 EDT [14237]: [472-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [473-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.243", size 447720
+2015-08-21 15:16:16 EDT [14237]: [474-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [475-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.210", size 17765856
+2015-08-21 15:16:16 EDT [14237]: [476-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [477-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.241", size 447280
+2015-08-21 15:16:16 EDT [14237]: [478-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [479-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.198", size 17770416
+2015-08-21 15:16:16 EDT [14237]: [480-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [481-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.258", size 443520
+2015-08-21 15:16:16 EDT [14237]: [482-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [483-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.224", size 17809296
+2015-08-21 15:16:16 EDT [14237]: [484-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [485-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.239", size 455840
+2015-08-21 15:16:16 EDT [14237]: [486-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [487-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.216", size 17731656
+2015-08-21 15:16:16 EDT [14237]: [488-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [489-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.235", size 442960
+2015-08-21 15:16:16 EDT [14237]: [490-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [491-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.218", size 17840232
+2015-08-21 15:16:16 EDT [14237]: [492-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [493-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.252", size 448640
+2015-08-21 15:16:16 EDT [14237]: [494-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [495-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.206", size 17825952
+2015-08-21 15:16:16 EDT [14237]: [496-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:16 EDT [14237]: [497-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.248", size 452320
+2015-08-21 15:16:16 EDT [14237]: [498-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [499-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.211", size 17762784
+2015-08-21 15:16:17 EDT [14237]: [500-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [501-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.237", size 456080
+2015-08-21 15:16:17 EDT [14237]: [502-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [503-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.207", size 17830872
+2015-08-21 15:16:17 EDT [14237]: [504-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [505-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.229", size 450800
+2015-08-21 15:16:17 EDT [14237]: [506-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [507-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.214", size 17818656
+2015-08-21 15:16:17 EDT [14237]: [508-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [509-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.242", size 451200
+2015-08-21 15:16:17 EDT [14237]: [510-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [511-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.219", size 17800152
+2015-08-21 15:16:17 EDT [14237]: [512-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [513-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.230", size 450360
+2015-08-21 15:16:17 EDT [14237]: [514-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [515-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.204", size 17874768
+2015-08-21 15:16:17 EDT [14237]: [516-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:16:17 EDT [14237]: [517-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.247", size 451080
+2015-08-21 15:16:17 EDT [14237]: [518-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:17:54 EDT [12680]: [17-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:17:54 EDT [12680]: [18-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.000 s, total=0.009 s; sync files=1, longest=0.000 s, average=0.000 s; distance=1 kB, estimate=184586 kB
+2015-08-21 15:21:40 EDT [14237]: [519-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.261", size 316346592
+2015-08-21 15:21:40 EDT [14237]: [520-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:44 EDT [14237]: [521-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.271", size 1250928
+2015-08-21 15:21:44 EDT [14237]: [522-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:45 EDT [14237]: [523-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.264", size 316237304
+2015-08-21 15:21:45 EDT [14237]: [524-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:51 EDT [14237]: [525-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.270", size 1252412
+2015-08-21 15:21:51 EDT [14237]: [526-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:52 EDT [14237]: [527-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.265", size 316737540
+2015-08-21 15:21:52 EDT [14237]: [528-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:56 EDT [14237]: [529-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.269", size 1256108
+2015-08-21 15:21:56 EDT [14237]: [530-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:21:57 EDT [14237]: [531-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.260", size 316739248
+2015-08-21 15:21:57 EDT [14237]: [532-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:01 EDT [14237]: [533-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.267", size 1248660
+2015-08-21 15:22:01 EDT [14237]: [534-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:02 EDT [14237]: [535-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.262", size 316752820
+2015-08-21 15:22:02 EDT [14237]: [536-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:04 EDT [14237]: [537-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.268", size 1250480
+2015-08-21 15:22:04 EDT [14237]: [538-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:07 EDT [14237]: [539-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.263", size 317065832
+2015-08-21 15:22:07 EDT [14237]: [540-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:09 EDT [14237]: [541-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.272", size 1250984
+2015-08-21 15:22:09 EDT [14237]: [542-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:11 EDT [14237]: [543-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.266", size 316327820
+2015-08-21 15:22:11 EDT [14237]: [544-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:13 EDT [14237]: [545-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.273", size 1247680
+2015-08-21 15:22:13 EDT [14237]: [546-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:22:54 EDT [12680]: [19-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:22:54 EDT [12680]: [20-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.011 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=166128 kB
+2015-08-21 15:27:54 EDT [12680]: [21-1] user=,db=,app=,client= LOG:  checkpoint starting: time
+2015-08-21 15:27:54 EDT [12680]: [22-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.000 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=1 kB, estimate=149515 kB
+2015-08-21 15:29:23 EDT [14237]: [547-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.302", size 11721560
+2015-08-21 15:29:23 EDT [14237]: [548-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [549-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.310", size 218988
+2015-08-21 15:29:23 EDT [14237]: [550-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [551-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.304", size 11706080
+2015-08-21 15:29:23 EDT [14237]: [552-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [553-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.321", size 216936
+2015-08-21 15:29:23 EDT [14237]: [554-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [555-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.290", size 11746000
+2015-08-21 15:29:23 EDT [14237]: [556-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [557-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.315", size 218988
+2015-08-21 15:29:23 EDT [14237]: [558-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [559-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.274", size 11739480
+2015-08-21 15:29:23 EDT [14237]: [560-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [561-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.320", size 215856
+2015-08-21 15:29:23 EDT [14237]: [562-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [563-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.301", size 11709440
+2015-08-21 15:29:23 EDT [14237]: [564-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [565-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.314", size 215892
+2015-08-21 15:29:23 EDT [14237]: [566-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [567-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.299", size 11727840
+2015-08-21 15:29:23 EDT [14237]: [568-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [569-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.317", size 221112
+2015-08-21 15:29:23 EDT [14237]: [570-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [571-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.275", size 11702600
+2015-08-21 15:29:23 EDT [14237]: [572-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [573-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.334", size 214128
+2015-08-21 15:29:23 EDT [14237]: [574-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [575-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.278", size 11732480
+2015-08-21 15:29:23 EDT [14237]: [576-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [577-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.324", size 221364
+2015-08-21 15:29:23 EDT [14237]: [578-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [579-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.280", size 11684200
+2015-08-21 15:29:23 EDT [14237]: [580-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:23 EDT [14237]: [581-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.308", size 223308
+2015-08-21 15:29:23 EDT [14237]: [582-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [583-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.288", size 11713000
+2015-08-21 15:29:24 EDT [14237]: [584-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [585-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.327", size 221616
+2015-08-21 15:29:24 EDT [14237]: [586-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [587-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.292", size 11731400
+2015-08-21 15:29:24 EDT [14237]: [588-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [589-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.313", size 222084
+2015-08-21 15:29:24 EDT [14237]: [590-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [591-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.284", size 11685000
+2015-08-21 15:29:24 EDT [14237]: [592-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [593-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.312", size 219276
+2015-08-21 15:29:24 EDT [14237]: [594-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [595-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.298", size 11737280
+2015-08-21 15:29:24 EDT [14237]: [596-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [597-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.311", size 217332
+2015-08-21 15:29:24 EDT [14237]: [598-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [599-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.282", size 11721720
+2015-08-21 15:29:24 EDT [14237]: [600-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [601-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.323", size 218016
+2015-08-21 15:29:24 EDT [14237]: [602-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [603-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.289", size 11711760
+2015-08-21 15:29:24 EDT [14237]: [604-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [605-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.325", size 219780
+2015-08-21 15:29:24 EDT [14237]: [606-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [607-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.287", size 11701640
+2015-08-21 15:29:24 EDT [14237]: [608-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [609-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.309", size 221472
+2015-08-21 15:29:24 EDT [14237]: [610-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [611-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.281", size 11722160
+2015-08-21 15:29:24 EDT [14237]: [612-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [613-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.330", size 219132
+2015-08-21 15:29:24 EDT [14237]: [614-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [615-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.303", size 11719640
+2015-08-21 15:29:24 EDT [14237]: [616-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [617-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.332", size 217620
+2015-08-21 15:29:24 EDT [14237]: [618-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [619-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.295", size 11737320
+2015-08-21 15:29:24 EDT [14237]: [620-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [621-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.307", size 220608
+2015-08-21 15:29:24 EDT [14237]: [622-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [623-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.293", size 11765440
+2015-08-21 15:29:24 EDT [14237]: [624-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [625-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.316", size 221688
+2015-08-21 15:29:24 EDT [14237]: [626-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [627-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.297", size 11735560
+2015-08-21 15:29:24 EDT [14237]: [628-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [629-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.305", size 223920
+2015-08-21 15:29:24 EDT [14237]: [630-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [631-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.300", size 11673440
+2015-08-21 15:29:24 EDT [14237]: [632-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:24 EDT [14237]: [633-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.319", size 214992
+2015-08-21 15:29:24 EDT [14237]: [634-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [635-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.286", size 11743160
+2015-08-21 15:29:25 EDT [14237]: [636-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [637-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.306", size 218700
+2015-08-21 15:29:25 EDT [14237]: [638-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [639-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.279", size 11725280
+2015-08-21 15:29:25 EDT [14237]: [640-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [641-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.326", size 222660
+2015-08-21 15:29:25 EDT [14237]: [642-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [643-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.277", size 11724720
+2015-08-21 15:29:25 EDT [14237]: [644-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [645-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.335", size 218664
+2015-08-21 15:29:25 EDT [14237]: [646-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [647-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.283", size 11722040
+2015-08-21 15:29:25 EDT [14237]: [648-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [649-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.329", size 223236
+2015-08-21 15:29:25 EDT [14237]: [650-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [651-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.291", size 11732320
+2015-08-21 15:29:25 EDT [14237]: [652-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [653-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.331", size 220176
+2015-08-21 15:29:25 EDT [14237]: [654-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [655-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.294", size 11723600
+2015-08-21 15:29:25 EDT [14237]: [656-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [657-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.328", size 220320
+2015-08-21 15:29:25 EDT [14237]: [658-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [659-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.276", size 11710880
+2015-08-21 15:29:25 EDT [14237]: [660-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [661-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.333", size 223560
+2015-08-21 15:29:25 EDT [14237]: [662-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [663-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.296", size 11705320
+2015-08-21 15:29:25 EDT [14237]: [664-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [665-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.322", size 218160
+2015-08-21 15:29:25 EDT [14237]: [666-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [667-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.285", size 11755080
+2015-08-21 15:29:25 EDT [14237]: [668-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:29:25 EDT [14237]: [669-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 LOG:  temporary file: path "base/pgsql_tmp/pgsql_tmp14237.318", size 219060
+2015-08-21 15:29:25 EDT [14237]: [670-1] user=mark,db=dbt3,app=pgxc,client=10.93.131.148 STATEMENT:  Remote Subplan
+2015-08-21 15:30:47 EDT [15386]: [1-1] user=,db=,app=,client= LOG:  autovacuum: found orphan temp table "pg_temp_28"."tmp_orderkey2" in database "dbt3"
+2015-08-21 15:30:49 EDT [12677]: [2-1] user=,db=,app=,client= LOG:  received fast shutdown request
+2015-08-21 15:30:49 EDT [12677]: [3-1] user=,db=,app=,client= LOG:  aborting any active transactions
+2015-08-21 15:30:49 EDT [13674]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 FATAL:  terminating connection due to administrator command
+2015-08-21 15:30:49 EDT [13595]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.206 FATAL:  terminating connection due to administrator command
+2015-08-21 15:30:49 EDT [13547]: [10-1] user=mark,db=dbt3,app=pgxc,client=10.94.132.84 FATAL:  terminating connection due to administrator command
+2015-08-21 15:30:49 EDT [13712]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 FATAL:  terminating connection due to administrator command
+2015-08-21 15:30:49 EDT [12683]: [2-1] user=,db=,app=,client= LOG:  autovacuum launcher shutting down
+2015-08-21 15:30:49 EDT [13540]: [1-1] user=mark,db=dbt3,app=pgxc,client=10.87.3.185 FATAL:  terminating connection due to administrator command
+2015-08-21 15:30:49 EDT [12680]: [23-1] user=,db=,app=,client= LOG:  shutting down
+2015-08-21 15:30:49 EDT [12680]: [24-1] user=,db=,app=,client= LOG:  checkpoint starting: shutdown immediate
+2015-08-21 15:30:49 EDT [12680]: [25-1] user=,db=,app=,client= LOG:  checkpoint complete: wrote 914 buffers (0.2%); 0 transaction log file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.047 s, total=0.069 s; sync files=31, longest=0.017 s, average=0.001 s; distance=9343 kB, estimate=135498 kB
+2015-08-21 15:30:49 EDT [12680]: [26-1] user=,db=,app=,client= LOG:  database system is shut down

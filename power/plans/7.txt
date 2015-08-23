@@ -1,0 +1,78 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	supp_nation,
+	cust_nation,
+	l_year,
+	sum(volume) as revenue
+from
+	(
+		select
+			n1.n_name as supp_nation,
+			n2.n_name as cust_nation,
+			extract(year from l_shipdate) as l_year,
+			l_extendedprice * (1 - l_discount) as volume
+		from
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2
+		where
+			s_suppkey = l_suppkey
+			and o_orderkey = l_orderkey
+			and c_custkey = o_custkey
+			and s_nationkey = n1.n_nationkey
+			and c_nationkey = n2.n_nationkey
+			and (
+				(n1.n_name = 'ARGENTINA' and n2.n_name = 'SAUDI ARABIA')
+				or (n1.n_name = 'SAUDI ARABIA' and n2.n_name = 'ARGENTINA')
+			)
+			and l_shipdate between date '1995-01-01' and date '1996-12-31'
+	) as shipping
+group by
+	supp_nation,
+	cust_nation,
+	l_year
+order by
+	supp_nation,
+	cust_nation,
+	l_year;
+                                                                                                                                                  QUERY PLAN                                                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=20895703.21..20895710.90 rows=3073 width=64)
+   Sort Key: n1.n_name, n2.n_name, (date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=20895479.11..20895525.20 rows=3073 width=64)
+         Group Key: n1.n_name, n2.n_name, date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone)
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=623375.00..20893774.57 rows=113636 width=64)
+               ->  HashAggregate  (cost=623375.00..20893774.57 rows=3073 width=64)
+                     Group Key: n1.n_name, n2.n_name, date_part('year'::text, (lineitem.l_shipdate)::timestamp without time zone)
+                     ->  Hash Join  (cost=623375.00..20893774.57 rows=113636 width=64)
+                           Hash Cond: (lineitem.l_suppkey = supplier.s_suppkey)
+                           Join Filter: (((n1.n_name = 'ARGENTINA'::bpchar) AND (n2.n_name = 'SAUDI ARABIA'::bpchar)) OR ((n1.n_name = 'SAUDI ARABIA'::bpchar) AND (n2.n_name = 'ARGENTINA'::bpchar)))
+                           ->  Nested Loop  (cost=586022.60..20841245.33 rows=2730591 width=42)
+                                 ->  Hash Join  (cost=586022.40..5203928.46 rows=2244606 width=30)
+                                       Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                       ->  Seq Scan on orders  (cost=0.00..4032960.00 rows=150000000 width=8)
+                                       ->  Hash  (cost=571022.40..571022.40 rows=1200000 width=30)
+                                             ->  Hash Join  (cost=1.40..571022.40 rows=1200000 width=30)
+                                                   Hash Cond: (customer.c_nationkey = n2.n_nationkey)
+                                                   ->  Seq Scan on customer  (cost=0.00..502771.00 rows=15000000 width=8)
+                                                   ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                                         ->  Seq Scan on nation n2  (cost=0.00..1.38 rows=2 width=30)
+                                                               Filter: ((n_name = 'SAUDI ARABIA'::bpchar) OR (n_name = 'ARGENTINA'::bpchar))
+                                 ->  Index Scan using lineitem_l_orderkey_l_linenumber_l_shipdate_idx on lineitem  (cost=0.20..6.96 rows=1 width=20)
+                                       Index Cond: ((l_orderkey = orders.o_orderkey) AND (l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
+                           ->  Hash  (cost=36352.40..36352.40 rows=80000 width=30)
+                                 ->  Hash Join  (cost=1.40..36352.40 rows=80000 width=30)
+                                       Hash Cond: (supplier.s_nationkey = n1.n_nationkey)
+                                       ->  Seq Scan on supplier  (cost=0.00..31801.00 rows=1000000 width=8)
+                                       ->  Hash  (cost=1.38..1.38 rows=2 width=30)
+                                             ->  Seq Scan on nation n1  (cost=0.00..1.38 rows=2 width=30)
+                                                   Filter: ((n_name = 'ARGENTINA'::bpchar) OR (n_name = 'SAUDI ARABIA'::bpchar))
+(30 rows)
+
+COMMIT;
+COMMIT

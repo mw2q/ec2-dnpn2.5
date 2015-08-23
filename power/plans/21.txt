@@ -1,0 +1,83 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	s_name,
+	count(*) as numwait
+from
+	supplier,
+	lineitem l1,
+	orders,
+	nation
+where
+	s_suppkey = l1.l_suppkey
+	and o_orderkey = l1.l_orderkey
+	and o_orderstatus = 'F'
+	and l1.l_receiptdate > l1.l_commitdate
+	and exists (
+		select
+			*
+		from
+			lineitem l2
+		where
+			l2.l_orderkey = l1.l_orderkey
+			and l2.l_suppkey <> l1.l_suppkey
+	)
+	and not exists (
+		select
+			*
+		from
+			lineitem l3
+		where
+			l3.l_orderkey = l1.l_orderkey
+			and l3.l_suppkey <> l1.l_suppkey
+			and l3.l_receiptdate > l3.l_commitdate
+	)
+	and s_nationkey = n_nationkey
+	and n_name = 'UNITED STATES'
+group by
+	s_name
+order by
+	numwait desc,
+	s_name
+LIMIT 100;
+                                                                                                                                                    QUERY PLAN                                                                                                                                                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=43053892.27..43053892.27 rows=1 width=26)
+   ->  Sort  (cost=43053892.27..43053892.27 rows=1 width=26)
+         Sort Key: (pg_catalog.count(*)) DESC, supplier.s_name
+         ->  HashAggregate  (cost=43053892.25..43053892.26 rows=1 width=26)
+               Group Key: supplier.s_name
+               ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=26576442.80..43053892.24 rows=1 width=26)
+                     ->  HashAggregate  (cost=26576442.80..43053892.24 rows=1 width=26)
+                           Group Key: supplier.s_name
+                           ->  Nested Loop Anti Join  (cost=26576442.80..43053892.24 rows=1 width=26)
+                                 ->  Nested Loop  (cost=26576442.67..43053877.35 rows=1 width=34)
+                                       ->  Hash Semi Join  (cost=26576442.48..43053869.72 rows=1 width=38)
+                                             Hash Cond: (l1.l_orderkey = l2.l_orderkey)
+                                             Join Filter: (l2.l_suppkey <> l1.l_suppkey)
+                                             ->  Hash Join  (cost=74383.44..14061903.36 rows=8000504 width=34)
+                                                   Hash Cond: (l1.l_suppkey = supplier.s_suppkey)
+                                                   ->  Bitmap Heap Scan on lineitem l1  (cost=50007.28..13207474.88 rows=200012608 width=8)
+                                                         Recheck Cond: (l_commitdate < l_receiptdate)
+                                                         ->  Bitmap Index Scan on lineitem_l_orderkey_idx_part1  (cost=0.00..4.13 rows=200012608 width=0)
+                                                   ->  Hash  (cost=23876.16..23876.16 rows=40000 width=30)
+                                                         ->  Nested Loop  (cost=750.17..23876.16 rows=40000 width=30)
+                                                               ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                                                     Filter: (n_name = 'UNITED STATES'::bpchar)
+                                                               ->  Bitmap Heap Scan on supplier  (cost=750.17..23474.84 rows=40000 width=34)
+                                                                     Recheck Cond: (s_nationkey = nation.n_nationkey)
+                                                                     ->  Bitmap Index Scan on supplier_s_nationkey_s_suppkey_idx  (cost=0.00..740.17 rows=40000 width=0)
+                                                                           Index Cond: (s_nationkey = nation.n_nationkey)
+                                             ->  Hash  (cost=16657688.24..16657688.24 rows=600037824 width=8)
+                                                   ->  Seq Scan on lineitem l2  (cost=0.00..16657688.24 rows=600037824 width=8)
+                                       ->  Index Scan using pk_orders on orders  (cost=0.20..7.61 rows=1 width=4)
+                                             Index Cond: (o_orderkey = l1.l_orderkey)
+                                             Filter: (o_orderstatus = 'F'::bpchar)
+                                 ->  Index Scan using lineitem_l_orderkey_idx_part1 on lineitem l3  (cost=0.12..7.50 rows=2 width=8)
+                                       Index Cond: (l_orderkey = l1.l_orderkey)
+                                       Filter: (l_suppkey <> l1.l_suppkey)
+(34 rows)
+
+COMMIT;
+COMMIT

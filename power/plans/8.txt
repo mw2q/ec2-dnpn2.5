@@ -1,0 +1,89 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	o_year,
+	sum(case
+		when nation = 'SAUDI ARABIA' then volume
+		else 0
+	end) / sum(volume) as mkt_share
+from
+	(
+		select
+			extract(year from o_orderdate) as o_year,
+			l_extendedprice * (1 - l_discount) as volume,
+			n2.n_name as nation
+		from
+			part,
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2,
+			region
+		where
+			p_partkey = l_partkey
+			and s_suppkey = l_suppkey
+			and l_orderkey = o_orderkey
+			and o_custkey = c_custkey
+			and c_nationkey = n1.n_nationkey
+			and n1.n_regionkey = r_regionkey
+			and r_name = 'MIDDLE EAST'
+			and s_nationkey = n2.n_nationkey
+			and o_orderdate between date '1995-01-01' and date '1996-12-31'
+			and p_type = 'MEDIUM POLISHED COPPER'
+	) as all_nations
+group by
+	o_year
+order by
+	o_year;
+                                                                                                                                                                             QUERY PLAN                                                                                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=5403430.29..5403432.12 rows=732 width=38)
+   Sort Key: (date_part('year'::text, (orders.o_orderdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=5403382.65..5403395.46 rows=732 width=38)
+         Group Key: date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=4816226.89..5403300.13 rows=4126 width=38)
+               ->  HashAggregate  (cost=4816226.89..5403300.13 rows=732 width=38)
+                     Group Key: date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+                     ->  Hash Join  (cost=4816226.89..5403300.13 rows=4126 width=38)
+                           Hash Cond: (supplier.s_nationkey = n2.n_nationkey)
+                           ->  Nested Loop  (cost=4816225.33..5403221.20 rows=4126 width=16)
+                                 ->  Hash Join  (cost=4816225.15..5375571.06 rows=4126 width=16)
+                                       Hash Cond: (customer.c_nationkey = n1.n_nationkey)
+                                       ->  Hash Join  (cost=4816222.62..5375449.91 rows=20629 width=20)
+                                             Hash Cond: (customer.c_custkey = orders.o_custkey)
+                                             ->  Seq Scan on customer  (cost=0.00..502771.00 rows=15000000 width=8)
+                                             ->  Hash  (cost=4814844.02..4814844.02 rows=110288 width=20)
+                                                   ->  Nested Loop  (cost=4013.70..4814844.02 rows=110288 width=20)
+                                                         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=4113.51..2365891.46 rows=362897 width=16)
+                                                               Distribute results by H: l_orderkey
+                                                               ->  Nested Loop  (cost=4013.51..2358170.63 rows=362897 width=16)
+                                                                     ->  Bitmap Heap Scan on part  (cost=4013.31..277314.59 rows=130209 width=4)
+                                                                           Recheck Cond: ((p_type)::text = 'MEDIUM POLISHED COPPER'::text)
+                                                                           ->  Bitmap Index Scan on part_p_type_p_partkey_idx  (cost=0.00..3980.76 rows=130209 width=0)
+                                                                                 Index Cond: ((p_type)::text = 'MEDIUM POLISHED COPPER'::text)
+                                                                     ->  Materialize  (cost=100.20..116.03 rows=3 width=20)
+                                                                           ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=100.20..116.03 rows=3 width=20)
+                                                                                 Distribute results by H: l_partkey
+                                                                                 ->  Index Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem  (cost=0.20..15.95 rows=3 width=20)
+                                                                                       Index Cond: (l_partkey = part.p_partkey)
+                                                         ->  Index Scan using pk_orders on orders  (cost=0.20..6.76 rows=1 width=12)
+                                                               Index Cond: (o_orderkey = lineitem.l_orderkey)
+                                                               Filter: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate <= '1996-12-31'::date))
+                                       ->  Hash  (cost=2.47..2.47 rows=5 width=4)
+                                             ->  Hash Join  (cost=1.07..2.47 rows=5 width=4)
+                                                   Hash Cond: (n1.n_regionkey = region.r_regionkey)
+                                                   ->  Seq Scan on nation n1  (cost=0.00..1.25 rows=25 width=8)
+                                                   ->  Hash  (cost=1.06..1.06 rows=1 width=4)
+                                                         ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
+                                                               Filter: (r_name = 'MIDDLE EAST'::bpchar)
+                                 ->  Index Scan using pk_supplier on supplier  (cost=0.17..6.69 rows=1 width=8)
+                                       Index Cond: (s_suppkey = lineitem.l_suppkey)
+                           ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                                 ->  Seq Scan on nation n2  (cost=0.00..1.25 rows=25 width=30)
+(43 rows)
+
+COMMIT;
+COMMIT

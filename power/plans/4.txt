@@ -1,0 +1,47 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	o_orderpriority,
+	count(*) as order_count
+from
+	orders
+where
+	o_orderdate >= date '1997-10-01'
+	and o_orderdate < cast(date '1997-10-01' + interval '3 month' as date)
+	and exists (
+		select
+			*
+		from
+			lineitem
+		where
+			l_orderkey = o_orderkey
+			and l_commitdate < l_receiptdate
+	)
+group by
+	o_orderpriority
+order by
+	o_orderpriority;
+                                                                                                                                                    QUERY PLAN                                                                                                                                                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=25534936.93..25534936.94 rows=1 width=16)
+   Sort Key: orders.o_orderpriority
+   ->  HashAggregate  (cost=25534936.91..25534936.92 rows=1 width=16)
+         Group Key: orders.o_orderpriority
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=16610656.31..25511428.16 rows=4701750 width=16)
+               ->  HashAggregate  (cost=16610656.31..25511428.16 rows=1 width=16)
+                     Group Key: orders.o_orderpriority
+                     ->  Hash Semi Join  (cost=16610656.31..25511428.16 rows=4701750 width=16)
+                           Hash Cond: (orders.o_orderkey = lineitem.l_orderkey)
+                           ->  Bitmap Heap Scan on orders  (cost=121723.83..2740732.08 rows=5736550 width=20)
+                                 Recheck Cond: ((o_orderdate >= '1997-10-01'::date) AND (o_orderdate < '1998-01-01'::date))
+                                 ->  Bitmap Index Scan on orders_o_orderdate_o_orderkey_idx  (cost=0.00..120289.70 rows=5736550 width=0)
+                                       Index Cond: ((o_orderdate >= '1997-10-01'::date) AND (o_orderdate < '1998-01-01'::date))
+                           ->  Hash  (cost=13207474.88..13207474.88 rows=200012608 width=4)
+                                 ->  Bitmap Heap Scan on lineitem  (cost=50007.28..13207474.88 rows=200012608 width=4)
+                                       Recheck Cond: (l_commitdate < l_receiptdate)
+                                       ->  Bitmap Index Scan on lineitem_l_orderkey_idx_part1  (cost=0.00..4.13 rows=200012608 width=0)
+(17 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,68 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	c_name,
+	c_custkey,
+	o_orderkey,
+	o_orderdate,
+	o_totalprice,
+	sum(l_quantity)
+from
+	customer,
+	orders,
+	lineitem
+where
+	o_orderkey in (
+		select
+			l_orderkey
+		from
+			lineitem
+		group by
+			l_orderkey having
+				sum(l_quantity) > 314
+	)
+	and c_custkey = o_custkey
+	and o_orderkey = l_orderkey
+group by
+	c_name,
+	c_custkey,
+	o_orderkey,
+	o_orderdate,
+	o_totalprice
+order by
+	o_totalprice desc,
+	o_orderdate
+LIMIT 100;
+                                                                                                                                                     QUERY PLAN                                                                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=133002488.04..133002551.16 rows=100 width=39)
+   ->  GroupAggregate  (cost=133002488.04..168422482.62 rows=56118682 width=39)
+         Group Key: orders.o_totalprice, orders.o_orderdate, customer.c_name, customer.c_custkey, orders.o_orderkey
+         ->  Remote Subquery Scan on all (datanode_1_1,datanode_1_2,datanode_2_1,datanode_2_2,datanode_3_1,datanode_3_2,datanode_4_1,datanode_4_2,datanode_5_1,datanode_5_2,datanode_6_1,datanode_6_2,datanode_7_1,datanode_7_2,datanode_8_1,datanode_8_2)  (cost=133002488.04..167019515.57 rows=56118682 width=39)
+               ->  GroupAggregate  (cost=133002488.04..167019515.57 rows=56118682 width=39)
+                     Group Key: orders.o_totalprice, orders.o_orderdate, customer.c_name, customer.c_custkey, orders.o_orderkey
+                     ->  Sort  (cost=175777042.90..175917339.61 rows=56118682 width=39)
+                           Sort Key: orders.o_totalprice DESC, orders.o_orderdate, customer.c_name, customer.c_custkey, orders.o_orderkey
+                           ->  Hash Join  (cost=133002488.04..167019515.57 rows=56118682 width=39)
+                                 Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                 ->  Seq Scan on lineitem  (cost=0.00..16657688.24 rows=600037824 width=8)
+                                 ->  Hash  (cost=132717528.22..132717528.22 rows=14028786 width=39)
+                                       ->  Hash Join  (cost=122409936.12..132717528.22 rows=14028786 width=39)
+                                             Hash Cond: (orders.o_orderkey = lineitem_1.l_orderkey)
+                                             ->  Hash Join  (cost=778162.00..9831932.72 rows=28057572 width=35)
+                                                   Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                                   ->  Seq Scan on orders  (cost=0.00..4032960.00 rows=150000000 width=16)
+                                                   ->  Hash  (cost=502771.00..502771.00 rows=15000000 width=23)
+                                                         ->  Seq Scan on customer  (cost=0.00..502771.00 rows=15000000 width=23)
+                                             ->  Hash  (cost=119614757.92..119614757.92 rows=122941936 width=4)
+                                                   ->  GroupAggregate  (cost=112348280.68..118385338.56 rows=122941936 width=8)
+                                                         Group Key: lineitem_1.l_orderkey
+                                                         Filter: (sum(lineitem_1.l_quantity) > '314'::double precision)
+                                                         ->  Sort  (cost=112348280.68..113848375.24 rows=600037824 width=8)
+                                                               Sort Key: lineitem_1.l_orderkey
+                                                               ->  Seq Scan on lineitem lineitem_1  (cost=0.00..16657688.24 rows=600037824 width=8)
+(26 rows)
+
+COMMIT;
+COMMIT
